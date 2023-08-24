@@ -1,0 +1,66 @@
+.TodoForm{
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  background-color: rgb(255, 255, 255);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow:  -12px -12px 21px #333333,
+  12px 12px 21px #000000;
+}
+.TodoForm__label{
+  font-size: 34px;
+  font-family: 'ADLaM Display', cursive;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.TodoForm__textArea{
+  font-family: inherit;
+  font-size: 20px;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: inset -9px -9px 26px #ededed,
+            inset 9px 9px 26px #ffffff;
+  border-radius: 10px;
+  /* Elimina el redimensionamiento si no lo quieres */
+  resize: none;
+  border: solid 2px transparent;
+  min-height: 100px;
+  margin-bottom: 30px;
+  font-family: 'ADLaM Display', cursive;
+
+}
+@media (max-width: 600px) {
+  .TodoForm__textArea:focus {
+    border-color: #9b9b9b; /* Aplica un color de borde de tu elección */
+  }
+}
+
+.TodoForm__buttonContainer{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;  
+  gap: 20px;
+}
+.TodoForm__button{
+  font-family: 'ADLaM Display', cursive;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 48px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.TodoForm--cancel{
+  
+  box-shadow: inset -9px -9px 26px #ededed,
+            inset 9px 9px 26px #ffffff;
+}
+.TodoForm--add{
+  
+  background-color: rgb(218, 218, 218);
+  box-shadow: inset -9px -9px 18px #a8a8a8,
+  inset 9px 9px 18px #a8a8a8;
+}

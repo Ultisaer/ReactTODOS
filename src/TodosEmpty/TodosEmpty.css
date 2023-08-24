@@ -1,0 +1,12 @@
+.TodosEmpty__Text{
+  display: flex;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: inset 8px 8px 19px #6a6969,
+              inset -8px -8px 19px #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50px;
+  padding: 10px;
+}

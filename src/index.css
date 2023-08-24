@@ -1,13 +1,42 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+  background-color: #dfe0ed;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  position: relative;
+}
+h1 , h2, h3, p , input{
+  font-family: 'ADLaM Display', cursive;
+  user-select: none; /* Estándar */
+
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  #root{
+    height: calc(100vh - 100px);
+    border-radius: 40px;
+    border: solid 20px #000000;
+    padding: 60px 20px 10px 20px;
+    width: 480px;
+    position: relative;
+  }
+  body {
+    display: grid;
+    place-content: center;
+    padding: 50px;
+  }
+  body .TodoButton{
+    position: absolute;
+    width: calc(100% - 40px);
+  }
 }

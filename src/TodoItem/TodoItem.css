@@ -1,0 +1,25 @@
+.TodoItem{
+  border-radius: 6px;
+background: #ffffff;
+box-shadow: inset 8px 8px 19px #6a6969,
+            inset -8px -8px 19px #ffffff;
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  min-height: 50px;
+  grid-template-columns: 30px auto 30px;  
+  padding: 10px;
+}
+.TodoItem__Completed{
+  background: #ffffff;
+  box-shadow: inset 20px 20px 47px #ffffff,
+              inset -20px -20px 47px #eae9e9;
+  text-decoration: line-through;
+  color: #555353;
+  opacity: 0.5;
+}
+.TodoItem--text{
+  grid-area: 1 / 1 / 2 / 4;
+  text-align: center;
+}

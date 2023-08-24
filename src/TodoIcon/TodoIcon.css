@@ -1,0 +1,45 @@
+.TodoItem__Container{
+  width: 30px;
+  height: 30px;
+}
+.TodoItem__Container:hover .TodoItem__Svg{
+  fill: rgb(74, 74, 74);
+}
+.TodoItem__Svg{
+  width: 100%;
+  height: 100%;
+  fill: #6a6969;
+  transition: fill 300ms;
+
+}
+.TodoItem__Svg--delete{
+  width: 25px;
+}
+.TodoSearch {
+  background-color: #ffffff;
+  box-shadow: 8px 8px 16px #000000, -8px -8px 16px #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+  display: grid;
+  align-items: center;
+}
+.TodoSearch__loading     
+{
+  width:12px;
+  height:12px;
+  margin-left: 20px;
+  background: #848484;
+  border-radius: 50%;
+  box-shadow: 20px 0 #84848422,-20px 0 #848484;
+  animation:d5 2s infinite linear alternate;
+}
+@keyframes d5 {
+    0% {box-shadow: 20px 0 #848484,-20px 0 #84848422;background: #848484}
+    33%{box-shadow: 20px 0 #848484,-20px 0 #84848422;background: #84848422}
+    66%{box-shadow: 20px 0 #84848422,-20px 0 #848484;background: #84848422}
+}
